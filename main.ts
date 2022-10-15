@@ -1,3 +1,41 @@
+radio.onReceivedString(function (receivedString) {
+    if (receivedString == "heart") {
+        basic.showLeds(`
+            . # . # .
+            # . # . #
+            # . . . #
+            . # . # .
+            . . # . .
+            `)
+    }
+    if (receivedString == "smile") {
+        basic.showLeds(`
+            . . . . .
+            . # . # .
+            . . . . .
+            # . . . #
+            . # # # .
+            `)
+    }
+    if (receivedString == "diamond") {
+        basic.showLeds(`
+            . . # . .
+            . # . # .
+            # . . . #
+            . # . # .
+            . . # . .
+            `)
+    }
+    if (receivedString == "circle") {
+        basic.showLeds(`
+            . # # # .
+            # . . . #
+            # . . . #
+            # . . . #
+            . # # # .
+            `)
+    }
+})
 radio.onReceivedValue(function (name, value) {
     if (name == "x") {
         xValue = value
@@ -7,42 +45,6 @@ radio.onReceivedValue(function (name, value) {
     }
     if (name == "stop") {
         stop = value
-    }
-    if (name == "heart") {
-        basic.showLeds(`
-            . # . # .
-            # . # . #
-            # . . . #
-            . # . # .
-            . . # . .
-            `)
-    }
-    if (name == "smile") {
-        basic.showLeds(`
-            . . . . .
-            . # . # .
-            . . . . .
-            # . . . #
-            . # # # .
-            `)
-    }
-    if (name == "diamond") {
-        basic.showLeds(`
-            . . # . .
-            . # . # .
-            # . . . #
-            . # . # .
-            . . # . .
-            `)
-    }
-    if (name == "circle") {
-        basic.showLeds(`
-            . # # # .
-            # . . . #
-            # . . . #
-            # . . . #
-            . # # # .
-            `)
     }
 })
 let distance = 0
