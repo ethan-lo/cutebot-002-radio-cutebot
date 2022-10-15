@@ -1,0 +1,27 @@
+{
+    "name": "CuteBot-002-Radio-Cutebot",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "radio": "*",
+        "microphone": "*",
+        "joystickbit": "github:tinkertanker/pxt-joystickbit#v1.0.1",
+        "cutebot": "github:elecfreaks/pxt-cutebot#v6.0.5"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "5.0.12",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj"
+}
